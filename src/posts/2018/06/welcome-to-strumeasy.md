@@ -1,8 +1,9 @@
 ---
 title: 'Welcome to StrumEasy'
-description: ''
-keywords: ''
-tags: ''
+description: 'StrumEasy has officaily launched our MVP!'
+postDate: 'June 1st, 2018'
+keywords: 'strumeasy, guitar, resources'
+tags: 'welcome'
 featuredImage: ''
 featuredImageCredit: ''
 featuredImageCreditURL: ''

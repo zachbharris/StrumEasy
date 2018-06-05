@@ -1,0 +1,18 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: $primary;
+  padding: 0.625rem;
+  svg {
+    height: 37px;
+    width: auto;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

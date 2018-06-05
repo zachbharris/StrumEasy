@@ -19,6 +19,7 @@ export const postQuery = graphql`
         path
         title
         description
+        postDate
         keywords
         tags
         featuredImage
