@@ -9,3 +9,4 @@ featuredImageCreditURL: ''
 path: '/blog/welcome-to-strumeasy'
 ---
 
+Welcome all!
