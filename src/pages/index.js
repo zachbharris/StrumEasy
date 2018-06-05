@@ -1,5 +1,5 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
 const IndexPage = ({data}) => (
   <div>
@@ -9,17 +9,17 @@ const IndexPage = ({data}) => (
     <Link to="/page-2/">Go to page 2</Link>
     <h2>Index</h2>
     {data.allMarkdownRemark.edges.map(post => (
-      <link 
+      <Link 
         key={post.node.id} 
-        href={post.node.frontmatter.path}>
-          {post.node.frontmatter.title}
-        </link>
-    ))}
+        to={post.node.frontmatter.path}>
+        {post.node.frontmatter.title}
+      </Link>
+    ))};
   </div>
-)
+);
 
 export const pageQuery = graphql`
-  query indexQuery {
+  query IndexQuery {
     allMarkdownRemark(limit: 6) {
       edges {
         node {
@@ -32,6 +32,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
-export default IndexPage
+export default IndexPage;
