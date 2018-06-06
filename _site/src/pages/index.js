@@ -14,19 +14,18 @@ const IndexPage = ({data}) => (
         <div className="featuredImage"></div>
       </div>
     </section>
-   
-    <section name="posts">
-      <div className="container">
-        {data.allMarkdownRemark.edges.map(post => (
-          <Link className="card" key={post.node.id} to={post.node.frontmatter.path}>
-            <span className="tag">{post.node.frontmatter.tags}</span>
-            <h2 className="title">{post.node.frontmatter.title}</h2>
-            <span className="date">{post.node.frontmatter.postDate}</span>
-            <span className="readMore">Read More →</span>
-          </Link>
-        ))};
-      </div>
-    </section>
+    <h1>Hi people</h1>
+    <p>Welcome to your new Gatsby site.</p>
+    <p>Now go build something great.</p>
+    <Link to="/page-2/">Go to page 2</Link>
+    <h2>Index</h2>
+    {data.allMarkdownRemark.edges.map(post => (
+      <Link 
+        key={post.node.id} 
+        to={post.node.frontmatter.path}>
+        {post.node.frontmatter.title}
+      </Link>
+    ))};
   </div>
 );
 
@@ -38,7 +37,6 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
-            tags
             path
             postDate
           }
