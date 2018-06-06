@@ -1,11 +1,11 @@
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
 nav {
-  background-color: $primary;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
   padding: calc(0.625rem + 5px) 0 0.625rem;
+  
   svg {
     height: 37px;
     width: auto;
@@ -44,4 +44,19 @@ nav {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+
+section[name="social"] {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 1rem;
+  a {
+    svg {
+      height: 16px;
+      path {
+        fill: white;
+        transition: fill ease-in-out 0.15s;
+      }
+    }
+  }
 }
