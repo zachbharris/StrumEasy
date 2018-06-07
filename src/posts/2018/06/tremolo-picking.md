@@ -8,5 +8,5 @@ imageCredit: 'Drew Patrick Miller'
 imageCreditURL: 'https://unsplash.com/@drewpatrickmiller'
 path: '/blog/tremolo-picking'
 published: true
-date: '2018-06-02'
+date: '2018-06-05'
 ---

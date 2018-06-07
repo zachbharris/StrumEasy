@@ -8,6 +8,6 @@ imageCredit: 'Marcos Luiz'
 imageCreditURL: 'https://unsplash.com/@marcosjluiz'
 path: '/blog/picking-the-right-amplifier'
 published: true
-date: '2018-06-01'
+date: '2018-06-06'
 ---
 

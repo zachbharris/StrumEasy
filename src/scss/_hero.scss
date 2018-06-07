@@ -8,6 +8,9 @@ section[name="hero"] {
     grid-template-areas: "content featuredImage";
     grid-template-columns: 3fr 1fr;
     grid-column-gap: 3rem;
+    @media screen and (max-width: 375px) {
+      grid-template-areas: "content content"
+    }
 
     .content {
       grid-area: content;
@@ -26,6 +29,9 @@ section[name="hero"] {
     .featuredImage {
       grid-area: featuredImage;
       text-align: right;
+      @media screen and (max-width: 375px) {
+        display: none;
+      }
       img {
         max-width: 100%;
       }

@@ -8,5 +8,5 @@ imageCredit: 'Jeremy Allouche'
 imageCreditURL: 'https://unsplash.com/@labandestyle'
 path: '/blog/collection-epiphone-les-paul-special'
 published: true
-date: '2018-06-05'
+date: '2018-06-02'
 ---

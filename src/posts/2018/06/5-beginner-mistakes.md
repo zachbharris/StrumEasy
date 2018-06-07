@@ -8,6 +8,6 @@ imageCredit: 'Haley Powers'
 imageCreditURL: 'https://unsplash.com/@haleypowers'
 path: '/blog/mistakes-made-while-learning-guitar'
 published: true
-date: '2018-06-06'
+date: '2018-06-07'
 ---
 
