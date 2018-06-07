@@ -37,6 +37,33 @@ const IndexPage = ({data}) => (
         <Link className="black" to="/archive">Visit the Archive →</Link>
       </div>
     </section>
+
+    <section name="featured creator">
+        <div className="container">
+          <div className="content">
+            <span className="tag">Featured Creator 🤘</span>
+            <h2 className="title">Jared Dines</h2>
+            <p className="excerpt">Jared Dines is a YouTuber best known for his covers and music-related comedy videos. In additon to his YouTube career, Jared Dines is also a musician. He is the former vocalist for the band Dissimulator, and is formerly the drummer for the band Rest, Repose, he took over on guitar after a lineup change.</p>
+          <a className="link" href="https://www.youtube.com/channel/UCJcYRr8rpsxVPfWA5vkuxFw" target="_blank" rel="noopener noreferrer">Jared Dines YouTube →</a>
+          </div>
+          <div className="featuredVideo">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/hYrN7EIeXmY?rel=0" frameBorder="0" allowFullScreen></iframe>
+          </div>
+        </div>
+    </section>
+
+    <section name="honorable mentions">
+      <div className="container">
+        <h2 className="title">Honorable Mentions</h2>
+        <div className="creators">
+          <a href="/" className="creator first" target="_blank" rel="noopener noreferrer"></a>
+          <a href="/" className="creator second" target="_blank" rel="noopener noreferrer"></a>
+          <a href="/" className="creator third" target="_blank" rel="noopener noreferrer"></a>
+          <a href="/" className="creator fourth" target="_blank" rel="noopener noreferrer"></a>
+          <a href="/" className="creator fifth" target="_blank" rel="noopener noreferrer"></a>
+        </div>
+      </div>
+    </section>
   </div>
 )
 
