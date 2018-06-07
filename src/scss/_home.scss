@@ -1,0 +1,22 @@
+section[name="posts"] {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.25rem;
+  }
+}
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-color: $primary;
+  min-height: 300px;
+  &:nth-child(2), &:nth-child(3), &:nth-child(6) {
+    grid-column: span 2;
+  }
+  &:nth-child(1), &:nth-child(4), &:nth-child(5) {
+    grid-column: span 1;
+  } 
+}

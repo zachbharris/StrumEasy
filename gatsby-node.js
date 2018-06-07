@@ -24,9 +24,19 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
             description
             keywords
             tags
-            featuredImage
-            featuredImageCredit
-            featuredImageCreditURL
+            image {
+              childImageSharp {
+                id
+                resolutions {
+                  width
+                  height
+                  src
+                  srcSet
+                }
+              }
+            }
+            imageCredit
+            imageCreditURL
           }
         }
       }

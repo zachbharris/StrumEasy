@@ -7,14 +7,28 @@ section[name="hero"] {
     display: grid;
     grid-template-areas: "content featuredImage";
     grid-template-columns: 3fr 1fr;
-
+    grid-column-gap: 3rem;
 
     .content {
       grid-area: content;
       color: white;
+      .postTitle {
+        margin-bottom: 1.25rem;
+      }
+      .featuredTag {
+        font-style: italic;
+        font-size: 1rem;
+      }
+      .postExcerpt {
+        margin-bottom: 3.125rem;
+      }
     }
     .featuredImage {
       grid-area: featuredImage;
+      text-align: right;
+      img {
+        max-width: 100%;
+      }
     }
   }
 }

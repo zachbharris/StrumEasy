@@ -19,12 +19,20 @@ export const postQuery = graphql`
         path
         title
         description
-        postDate
+        date
         keywords
         tags
-        featuredImage
-        featuredImageCredit
-        featuredImageCreditURL
+        image {
+          childImageSharp {
+            id
+            resolutions {
+              width
+              height
+              src
+              srcSet
+            }
+          }
+        }
       }
     }
   }
