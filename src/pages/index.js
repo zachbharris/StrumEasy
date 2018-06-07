@@ -1,6 +1,18 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import mention1 from '../images/mentions/flippaq.jpg'
+import mention2 from '../images/mentions/guitarzerotohero.jpg'
+import mention3 from '../images/mentions/knowyourgear.jpg'
+import mention4 from '../images/mentions/musiciswin.jpg'
+import mention5 from '../images/mentions/rachelf.jpg'
+
+const mentionLink1 = 'https://www.youtube.com/channel/UCCSjxH_Fi_F9_QHwy-wmDlA';
+const mentionLink2 = 'https://www.youtube.com/channel/UCasFZzbM8JJ6dqSVEgL9VVg';
+const mentionLink3 = 'https://www.youtube.com/channel/UCEzJtFWNg7d7TZW7K9JyXmw';
+const mentionLink4 = 'https://www.youtube.com/channel/UCshiNtfJ7Dj3nlh41a6M-kg';
+const mentionLink5 = 'https://www.youtube.com/channel/UC_UQOj6d7RevVGVt6ZhDqKg';
+
 const IndexPage = ({data}) => (
   <div>
     <section name="hero">
@@ -56,11 +68,11 @@ const IndexPage = ({data}) => (
       <div className="container">
         <h2 className="title">Honorable Mentions</h2>
         <div className="creators">
-          <a href="/" className="creator first" target="_blank" rel="noopener noreferrer"></a>
-          <a href="/" className="creator second" target="_blank" rel="noopener noreferrer"></a>
-          <a href="/" className="creator third" target="_blank" rel="noopener noreferrer"></a>
-          <a href="/" className="creator fourth" target="_blank" rel="noopener noreferrer"></a>
-          <a href="/" className="creator fifth" target="_blank" rel="noopener noreferrer"></a>
+          <a href={mentionLink1} className="creator first" target="_blank" rel="noopener noreferrer" style={{backgroundImage: `url(${mention1})`}}></a>
+          <a href={mentionLink2} className="creator second" target="_blank" rel="noopener noreferrer" style={{ backgroundImage: `url(${mention2})` }}></a>
+          <a href={mentionLink3} className="creator third" target="_blank" rel="noopener noreferrer" style={{backgroundImage: `url(${mention3})`}}></a>
+          <a href={mentionLink4} className="creator fourth" target="_blank" rel="noopener noreferrer" style={{backgroundImage: `url(${mention4})`}}></a>
+          <a href={mentionLink5} className="creator fifth" target="_blank" rel="noopener noreferrer" style={{backgroundImage: `url(${mention5})`}}></a>
         </div>
       </div>
     </section>
