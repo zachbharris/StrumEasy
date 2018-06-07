@@ -25,7 +25,7 @@ const IndexPage = ({data}) => (
             <Link className="postLink" to={feature.node.frontmatter.path}>Read More →</Link>
           </div>
           <div className="featuredImage">
-            <img key={feature.node.frontmatter.image.childImageSharp.id} src={feature.node.frontmatter.image.childImageSharp.resolutions.src} alt="" />
+            <img key={feature.node.frontmatter.image.childImageSharp.id} src={feature.node.frontmatter.image.childImageSharp.resolutions.src} alt={`image provided by ${feature.node.frontmatter.imageCredit}`} />
           </div>
         </div>
       ))}
@@ -104,6 +104,7 @@ export const pageQuery = graphql`
                 }
               }
             }
+            imageCredit
             tags
             published
           }

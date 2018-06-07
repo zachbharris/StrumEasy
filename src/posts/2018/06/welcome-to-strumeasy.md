@@ -4,8 +4,8 @@ description: 'StrumEasy has officaily launched our MVP!'
 keywords: 'strumeasy, guitar, resources'
 tags: 'featured'
 image: './images/strings.jpg'
-imageCredit: ''
-imageCreditURL: ''
+imageCredit: 'Zach Harris'
+imageCreditURL: 'https://twitter.com/zachbharris'
 path: '/blog/welcome-to-strumeasy'
 published: true
 featured: true
