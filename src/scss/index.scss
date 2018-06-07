@@ -623,6 +623,10 @@ pre tt:after {
   }
 }
 
+section {
+  margin-bottom: 3.125rem;
+}
+
 @import './colors';
 @import './animations';
 @import './helpers';

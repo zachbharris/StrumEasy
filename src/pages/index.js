@@ -31,6 +31,12 @@ const IndexPage = ({data}) => (
         ))}
       </div>
     </section>
+
+    <section name="archive">
+      <div className="container text-right">
+        <Link className="black" to="/archive">Visit the Archive →</Link>
+      </div>
+    </section>
   </div>
 )
 

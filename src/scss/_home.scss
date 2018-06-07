@@ -18,6 +18,7 @@ section[name="posts"] {
     "date readMore";
   grid-template-rows: auto 1fr auto;
   grid-row-gap: 1.25rem;
+  grid-column-gap: 1.25rem;
   border-radius: 5px;
   overflow: hidden;
   background-size: cover;
@@ -56,6 +57,7 @@ section[name="posts"] {
     font-family: 'Asap', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
+    font-style: italic;
     text-rendering: optimizeLegibility;
   }
   .date {
