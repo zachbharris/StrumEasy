@@ -1,0 +1,45 @@
+.grid-posts {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.25rem;
+    @media screen and (max-width: 375px) {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+.grid-section {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "content featured";
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 3rem;
+    .title, .tag, .excerpt, .link {
+      grid-area: content;
+    }
+    .featured {
+      grid-area: featured;
+      align-items: center;
+      text-align: right;
+      img, iframe {
+        max-width: 100%;
+        margin: 0;
+      }
+      iframe {
+        height: 240px;
+      }
+    }
+  }
+}
+
+.grid-post {
+  .container {
+    display: grid;
+    grid-template-areas: 
+      "featured featured featured"
+      ". post ."
+      ". end .";
+  }
+}

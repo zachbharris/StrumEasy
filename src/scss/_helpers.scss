@@ -10,3 +10,31 @@
 .text-center {
   text-align: center;
 }
+
+.icon {
+  height: 16px;
+  &.large {
+    height: 32px;
+  }
+}
+
+section {
+  margin-bottom: 3.125rem;
+  padding: 3.125rem 0;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &:before {
+    content: '';
+    display: block;
+    height: 16px;
+    width: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 13 17' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.735.849l2.754 3.743c.168.228.217.316.258.422.041.106.06.211.06.325.001.113-.012.213-.086.487l-2.594 9.68c-.115.43-.202.575-.328.71a.909.909 0 0 1-.463.267c-.18.042-.348.045-.779-.07l-7.182-1.925c-.431-.116-.575-.202-.71-.329a.909.909 0 0 1-.267-.463c-.042-.18-.045-.348.07-.778l2.594-9.68c.073-.274.111-.367.168-.466a.878.878 0 0 1 .216-.25c.088-.071.174-.123.434-.237L8.137.42c.357-.156.5-.183.662-.183a.9.9 0 0 1 .454.122c.14.08.25.175.482.49zM7.813 4.825a1 1 0 1 0 .518-1.932 1 1 0 0 0-.518 1.932z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.5rem;
+  }
+}

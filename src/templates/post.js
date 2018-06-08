@@ -1,13 +1,20 @@
-import React from 'react';
-import Helmet from 'react-helmet';
+import React from 'react'
+import Helmet from 'react-helmet'
 
 export default function Template({data}) {
   const { markdownRemark: post } = data;
   return (
-    <div>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </div>
+    <section name="post">
+      <div className="container">
+        <div className="featured">
+          <img src={post.frontmatter.image.childImageSharp.resolutions.src} alt=""/>
+        </div>
+        <div className="content">
+          <h1>{post.frontmatter.title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </div>
+      </div>
+    </section>
   )
 }
 
@@ -33,6 +40,8 @@ export const postQuery = graphql`
             }
           }
         }
+        imageCredit
+        imageCreditURL
       }
     }
   }
