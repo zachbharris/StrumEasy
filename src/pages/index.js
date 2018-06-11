@@ -5,15 +5,15 @@ const IndexPage = ({data}) => (
   <div>
     <section name="hero" className="typography-bg grid-section">
       {data.featured.edges.map(feature => (
-        <div className="container">
-          <div key={feature.node.id} className="content">
+        <div key={feature.node.id} className="container">
+          <div className="content">
             <span className="tag">{feature.node.frontmatter.tags}</span>
             <h1 className="title">{feature.node.frontmatter.title}</h1>
             <p className="excerpt">{feature.node.excerpt}</p>
             <Link className="link" to={feature.node.frontmatter.path}>Read More →</Link>
           </div>
           <div className="featured">
-            <img key={feature.node.frontmatter.image.childImageSharp.id} src={feature.node.frontmatter.image.childImageSharp.resolutions.src} alt={`image provided by ${feature.node.frontmatter.imageCredit}`} />
+            <img src={feature.node.frontmatter.image.childImageSharp.resolutions.src} alt={`image provided by ${feature.node.frontmatter.imageCredit}`} />
           </div>
         </div>
       ))}
@@ -51,8 +51,8 @@ const IndexPage = ({data}) => (
 
     <section name="gear" className="grid-gear">
       <div className="container">
-        {data.gear.edges.map(gear => (
-          <div className="gear">
+        {data.gearYaml.edges.map(gear => (
+          <div key={gear.node.id} className="gear">
             <img className="image" src={gear.node.gear.image} alt=""/>
             <h3>{gear.node.gear.title}</h3>
             <p>{gear.node.gear.desc}</p>
@@ -124,9 +124,10 @@ export const pageQuery = graphql`
         }
       }
     }
-    gear: allGearYaml {
+    gearYaml: allGearYaml {
       edges {
         node {
+          id
           gear {
             name
             desc
