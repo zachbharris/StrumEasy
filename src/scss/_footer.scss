@@ -1,0 +1,29 @@
+footer {
+  width: 100%;
+  background-color: transparent;
+  padding: calc(0.625rem + 5px) 0 0.625rem;
+  a {
+    background: none;
+  }
+  p {
+    margin: 0;
+  }
+  svg {
+    height: 37px;
+    width: auto;
+  }
+  .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 1.25rem;
+    grid-column-gap: 1.25rem;
+    @media screen and (max-width: 425px) {}
+    .social {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-column-gap: 1.25rem;
+      align-content: end;
+    }
+  }
+}

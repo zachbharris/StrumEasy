@@ -19,8 +19,17 @@
 }
 
 section {
-  margin-bottom: 3.125rem;
+  margin-bottom: 0;
   padding: 3.125rem 0;
+  @media screen and (max-width: 425px) {
+    margin-bottom: 0;
+    padding: 3.125rem 0;
+  }
+}
+
+.tag, .headline {
+  font-style: italic;
+  font-size: 1rem;
 }
 
 .tag {

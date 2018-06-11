@@ -1,10 +1,24 @@
-.grid-posts {
+.grid-recent-posts {
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1.25rem;
-    @media screen and (max-width: 375px) {
-      grid-template-columns: auto;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (max-width: 425px) {
+      grid-template-columns: 1fr;
+    }
+
+    .archive {
+      grid-column-start: 3;
+      text-align: right;
+      margin-top: 1.875rem;
+      @media screen and (max-width: 425px) {
+        margin-top: 1.875rem;
+        text-align: center;
+        grid-column-start: auto;
+      }
     }
   }
 }
@@ -16,7 +30,15 @@
       "content featured";
     grid-template-columns: 3fr 2fr;
     grid-column-gap: 3rem;
-    .title, .tag, .excerpt, .link {
+    @media screen and (max-width: 425px) {
+      grid-template-areas: 
+        "content"
+        "featured";
+      grid-column-gap: 0;
+      grid-row-gap: 1.25rem;
+      grid-template-columns: auto;
+    }
+    .title, .tag, .headline, .excerpt, .link {
       grid-area: content;
     }
     .featured {
@@ -27,8 +49,19 @@
         max-width: 100%;
         margin: 0;
       }
+      img {
+        @media screen and (max-width: 425px) {
+          display: none;
+        }
+      }
       iframe {
         height: 240px;
+        @media screen and (max-width: 425px) {
+          height: 220px;
+          width: 100%;
+          margin: auto;
+          display: block;
+        }
       }
     }
   }
@@ -42,4 +75,8 @@
       ". post ."
       ". end .";
   }
+}
+
+.grid-gear {
+  
 }
